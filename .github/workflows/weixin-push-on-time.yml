@@ -6,8 +6,8 @@ name: weixin-push-on-time
 on:
   workflow_dispatch:
   schedule:
-    # 每天国际时间 22:45 运行，即北京时间 6:45 运行，因为有延迟，收到推送应该在7:00
-    - cron: '45 22 * * *'
+    # 每天国际时间 22:15 运行，即北京时间 6:15 运行，因为有延迟，收到推送应该在6:30
+    - cron: '15 22 * * *'
     
 jobs:
   build:
